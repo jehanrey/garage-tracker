@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+.form-item {
+  margin-bottom: 20px;
+  .label {
+    width: 10rem;
+    display: inline-block;
+  }
+
+  .error {
+    padding-left: 10rem;
+    color: $color-red;
+    font-weight: 300;
+    font-size: 10px;
+  }
+
+  input[type=file] {
+    display: none;
+  }
+
+  .file-input-display {
+    display: inline;
+    cursor: text;
+  }
+
+  img {
+    padding-left: 10rem;
+    display: block;
+    height: 10rem;
+  }
+}
+
+.form-item.has-error {
+  margin-bottom: 10px;
+}
